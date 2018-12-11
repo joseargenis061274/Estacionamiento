@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AperturaComponent } from './components/apertura/apertura.component';
 import { CobranzasComponent } from './components/cobranzas/cobranzas.component';
 import { FacturasComponent } from './components/facturas/facturas.component';
@@ -19,7 +20,8 @@ import {MaterialModule} from './material'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
