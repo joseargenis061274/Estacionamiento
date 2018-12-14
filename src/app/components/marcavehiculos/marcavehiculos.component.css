@@ -1,8 +1,0 @@
-.vehiculo-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .vehiculo-container > * {
-    width: 100%;
-  }  

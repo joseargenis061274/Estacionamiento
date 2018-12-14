@@ -1,3 +1,23 @@
-<p>
-  cobranzas works!
-</p>
+<br>
+<div class="contenedor">
+    <div class="wrap">
+    <h4>Registrando Cobranzas</h4>
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Ingrese Placa">
+  </mat-form-field>
+  <br>
+  <p>Hora de entrada: <span class="resultado">{{resultado}}</span></p>
+  <p>Hora de salida: <span class="resultado">{{resultado}}</span></p>
+  <p>Total segundos: <span class="resultado">{{resultado}}</span></p>
+  <p>Total a pagar: <span class="resultado">{{resultado}}</span></p>
+  
+
+  <hr>
+  <div class="example-button-row">
+    <button mat-raised-button  (click)="cobrar()">Registrar Pago</button>
+  
+  </div> 
+  
+
+</div>
+</div>    

@@ -9,8 +9,15 @@ import { CobranzasComponent } from './components/cobranzas/cobranzas.component';
 import { FacturasComponent } from './components/facturas/facturas.component';
 import { HomeComponent } from './components/home/home.component';
 import {MaterialModule} from './material';
-import { MarcaVehiculos } from './components/marcavehiculos/marcavehiculos.component'
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MoverComponent } from './components/mover/mover.component';
+import { ReportesComponent } from './components/reportes/reportes.component';
+import { ApiComponent } from './components/api/api.component';
+import { ApiconclaveComponent } from './components/apiconclave/apiconclave.component';
+import { ApiconautenticaComponent } from './components/apiconautentica/apiconautentica.component';
+
+
 
 @NgModule({
   declarations: [
@@ -19,14 +26,19 @@ import { FormsModule } from '@angular/forms';
     CobranzasComponent,
     FacturasComponent,
     HomeComponent,
-    MarcaVehiculos
+    MoverComponent,
+    ReportesComponent,
+    ApiComponent,
+    ApiconclaveComponent,
+    ApiconautenticaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

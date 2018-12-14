@@ -1,0 +1,7 @@
+<div class="example-button-row">
+  <button mat-raised-button  (click)="getPosts()">Enviar peticion sin clave</button>
+</div> 
+
+<div *ngFor= "let post of posts | async">
+    {{ post | json }}
+</div>

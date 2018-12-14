@@ -20,7 +20,15 @@
           Vehículos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" [routerLink]="['factura']">Mover</a>
+          <a class="dropdown-item" [routerLink]="['mover']">Mover</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Configuración
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" [routerLink]="['apertura']">Iniciar Celdas</a>
         </div>
       </li>
       <li class="nav-item dropdown active">
@@ -28,15 +36,18 @@
             Reportes
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" [routerLink]="['factura']">Mover</a>
+            <a class="dropdown-item" [routerLink]="['reportes']">Celdas </a>
           </div>
         </li>
         <li class="nav-item dropdown active">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Configuración
+            Prueba de Api
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" [routerLink]="['factura']">Iniciar Celdas</a>
+            <a class="dropdown-item" [routerLink]="['api']">Api sin clave </a>
+            <a class="dropdown-item" [routerLink]="['apiconclave']">Api con clave campo id=1 </a>
+            <a class="dropdown-item" [routerLink]="['apiconautentica']">Api con autenticacion </a>
+            
           </div>
         </li>
       

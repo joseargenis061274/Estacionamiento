@@ -1,21 +1,34 @@
 <br>
-<h4>Registrando Factura</h4>
-<div class="example-container">
-  <mat-form-field>
-    <input matInput placeholder="Ingrese Nombre del Cliente">
+<div class="contenedor">
+    <div class="wrap">
+    <h4>Registrando Factura</h4>
+  <mat-form-field class="full-width">
+    <input matInput [(ngModel)]="cliente" placeholder="Ingrese Nombre del Cliente" required>
   </mat-form-field>
-  <mat-form-field>
-     <input matInput placeholder="Ingrese placa del Vehiculo">
+  <br>
+  <mat-form-field class="full-width">
+     <input [(ngModel)]="placa" matInput placeholder="Ingrese placa del Vehiculo" required>
     </mat-form-field>
-  <select-marcavehiculo></select-marcavehiculo>
+  <br>
+  <form>
+      <mat-form-field class="full-width">
+      <mat-select [(value)]="marca" placeholder="Seleccione la Marca" required>
+        <mat-option>Seleccione</mat-option>
+        <mat-option *ngFor="let car of cars" [value]="car.value" >{{car.viewValue}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+   </form> 
   <br>
   <hr>
   <div class="example-button-row">
-    <button mat-raised-button>Basic</button>
+    <button mat-raised-button  (click)="getPosts()">Facturar</button>
+  
   </div> 
-
+  
 </div>
-          
-          
+</div>          
+<div *ngFor="let post of posts | async">
+  {{ post  | json }}
+</div>          
       
                   
