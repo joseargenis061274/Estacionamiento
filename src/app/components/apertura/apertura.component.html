@@ -1,16 +1,18 @@
 <br>
 <div class="contenedor">
-    <div class="wrap">
+  <div class="wrap">
     <h4>Iniciar apertura de estacionamiento</h4>
     <br>
-  
-    <p>Iniciar registro de celda: <span class="resultado">{{resultado}}</span></p>
-  
-
-  <hr>
-  <div class="example-button-row">
-    <button mat-raised-button  (click)="aperturaCeldas()">Aperturar</button>
-  </div> 
-  
-</div>
+    <p>Este proceso configura los puestos del estacionamiento </p>
+    <p>Cantidad de puestos por crear: <span class="resultado">{{cantCelAdd}}</span></p>
+    <hr>
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Ingrese valor del segundo:"  required>
+      
+      <span matPrefix>$&nbsp;</span>
+    </mat-form-field>
+    <div class="example-button-row">
+      <button mat-raised-button  (click)="setCeldas()">Aperturar</button>
+    </div>  
+  </div>
 </div>    
